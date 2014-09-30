@@ -1,9 +1,10 @@
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #269abc;
 }
 #container {
-    background-color: #269abc;
     height: 100vh;
+    white-space: nowrap;
 }
 #master-header {
     height: 10vh;
@@ -19,12 +20,10 @@ body {
     width: 90vw;
     padding: 5px;
 }
-.content {
-    white-space: nowrap;
-}
 .cluster {
     margin: 0;
     display: inline-block;
+    vertical-align: bottom;
     width: 240px;
     margin-right: 10px;
     background: #f1f9ff;
@@ -53,4 +52,26 @@ body {
 }
 .timeline .cluster-title {
     background-color: #d2b400;
+}
+.peep-element {
+    background-color: #d2f1fe;
+    padding: 10px;
+    margin: 5px 0;
+}
+.element-header {
+    height: 32px;
+    margin-bottom: 5px;
+}
+.element-header a {
+    color: #32004b;
+    line-height: 32px;
+}
+.avatar-head {
+    border: 2px solid #00d6de;
+    border-radius: 18px;
+    margin-right: 10px;
+}
+.time-delay {
+    color: #8da2aa;
+    font-size: 70%;
 }

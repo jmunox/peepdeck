@@ -31,7 +31,7 @@
                         <img src=""/>
                         <p>Joe Joe</p>
                     </div>
-                    <div id="cluster-content">
+                    <div class="cluster-content">
                         <section class="content">
                             <div id="{element1.name}" class="peep-element">
                                 <div class="element-header collapsible">
@@ -54,7 +54,7 @@
                         <img src=""/>
                         <p>Project</p>
                     </div>
-                    <div id="cluster-content">
+                    <div class="cluster-content">
                         <section class="content">
                             <div id="{element1.name}" class="peep-element">
                                 <div class="element-header">
@@ -77,17 +77,33 @@
                         <img src=""/>
                         <p>Recent activity</p>
                     </div>
-                    <div id="cluster-content">
+                    <div class="cluster-content">
                         <section class="content">
                             <div id="{element1.name}" class="peep-element">
                                 <div class="element-header collapsible">
-                                    <a href="#"><img src="" alt="">John Doe</a>
+                                    <a href="#"><img src="img/avatar-head-blank.png" alt="" class="avatar-head">John Doe</a>
                                 </div>
-                                <p>{element1.content}</p>
+                                <ul class="element-content">
+                                    <li class="task"><span class="status">finished:</span> {task.title} <span class="time-delay">{1 m}</span></li>
+                                    <li class="folder"><span class="status">edited</span> {folder.name}
+                                        <ul>
+                                            <li class="file"><span class="status">edited</span> {file.name} <span class="time-delay">{1 m}</span></li>
+                                            <li class="file"><span class="status">edited</span> {file.name} <span class="time-delay">{1 m}</span></li>
+                                            <li class="file"><span class="status">edited</span> {file.name} <span class="time-delay">{1 m}</span></li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder"><span class="status">edited</span> {folder.name}
+                                        <ul>
+                                            <li class="file"><span class="status">edited</span> {file.name} <span class="time-delay">{1 m}</span></li>
+                                            <li class="file"><span class="status">edited</span> {file.name} <span class="time-delay">{1 m}</span></li>
+                                            <li class="file"><span class="status">edited</span> {file.name} <span class="time-delay">{1 m}</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                             <div id="{element1.name}" class="peep-element">
                                 <div class="element-header">
-                                    <a href="#"><img src="" alt="">Don Joe</a>
+                                    <a href="#"><img src="img/avatar-head-blank.png" alt="" class="avatar-head">Don Joe</a>
                                 </div>
                                 <p>{element1.content}</p>
                             </div>
@@ -100,7 +116,7 @@
                         <img src=""/>
                         <p>Timeline</p>
                     </div>
-                    <div id="cluster-content">
+                    <div class="cluster-content">
                         <section class="content">
                             <div id="{element1.name}" class="peep-element">
                                 <div class="element-header">
@@ -117,6 +133,7 @@
                         </section>
                     </div>
                 </div>
+                
             </div>
         </div> <!--! end of #main -->
         <footer id="master-footer">
