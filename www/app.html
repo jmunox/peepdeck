@@ -9,53 +9,108 @@
     <link href="libs/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/main.css" rel="stylesheet" >
 
+    <script src="libs/jquery-ui-1.11.1/external/jquery/jquery.js"></script>
     <script src="libs/bootstrap-3.2.0-dist/js/bootstrap.js"></script>
 
     <!-- <link href="libs/jquery-ui-1.11.1/jquery-ui.css" rel="stylesheet" >
-    <script src="libs/jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    
     <script src="libs/jquery-ui-1.11.1/jquery-ui.js"></script> -->
   </head>
   <body>
-    <p></p>
     <div id="container" class="container-fluid">
         <div id="master-header" role="navigation">
             <div class="header-title">
-                <br/>Search
+                <label for="global-search">Search:</label>
+                <input type="text" id="global-search"/>
             </div>
         </div>
         <div id="main" role="main">
             <div id="list-cluster" class="wrapper">
-                <div id="{cluster1.name}">
+                <div id="{cluster1.name}" class="cluster home">
                     <div class="cluster-title">
-                        <a href="#{cluster1.name}" title="{cluster1.name}">{cluster1.name}</a>
+                        <img src=""/>
+                        <p>Joe Joe</p>
                     </div>
                     <div id="cluster-content">
                         <section class="content">
                             <div id="{element1.name}" class="peep-element">
-                                <div class="element-header home">
-                                    <img src=""/>
-                                    <p>Joe Joe</p>
+                                <div class="element-header collapsible">
+                                    <a href="#">Your deadlines</a>
                                 </div>
                                 <p>{element1.content}</p>
                             </div>
                             <div id="{element1.name}" class="peep-element">
-                                <div class="element-header project">
-                                    <img src=""/>
-                                    <p>ABC Project</p>
+                                <div class="element-header">
+                                    <a href="#">To do today</a>
+                                </div>
+                                <p>{element1.content}</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                
+                <div id="{cluster1.name}" class="cluster project">
+                    <div class="cluster-title">
+                        <img src=""/>
+                        <p>Project</p>
+                    </div>
+                    <div id="cluster-content">
+                        <section class="content">
+                            <div id="{element1.name}" class="peep-element">
+                                <div class="element-header">
+                                    <a href="#">Team mates</a>
                                 </div>
                                 <p>{element1.content}</p>
                             </div>
                             <div id="{element1.name}" class="peep-element">
-                                <div class="element-header activity">
-                                    <img src=""/>
-                                    <p>Recent activity</p>
+                                <div class="element-header">
+                                    <a href="#">Project deadlines</a>
+                                </div>
+                                <p>{element1.content}</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                
+                <div id="{cluster1.name}" class="cluster activity">
+                    <div class="cluster-title">
+                        <img src=""/>
+                        <p>Recent activity</p>
+                    </div>
+                    <div id="cluster-content">
+                        <section class="content">
+                            <div id="{element1.name}" class="peep-element">
+                                <div class="element-header collapsible">
+                                    <a href="#"><img src="" alt="">John Doe</a>
                                 </div>
                                 <p>{element1.content}</p>
                             </div>
                             <div id="{element1.name}" class="peep-element">
-                                <div class="element-header timeline">
-                                    <img src=""/>
-                                    <p>Timeline</p>
+                                <div class="element-header">
+                                    <a href="#"><img src="" alt="">Don Joe</a>
+                                </div>
+                                <p>{element1.content}</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                
+                <div id="{cluster1.name}" class="cluster timeline">
+                    <div class="cluster-title">
+                        <img src=""/>
+                        <p>Timeline</p>
+                    </div>
+                    <div id="cluster-content">
+                        <section class="content">
+                            <div id="{element1.name}" class="peep-element">
+                                <div class="element-header">
+                                    <a href="#">Team mates</a>
+                                </div>
+                                <p>{element1.content}</p>
+                            </div>
+                            <div id="{element1.name}" class="peep-element">
+                                <div class="element-header">
+                                    <a href="#">Project deadlines</a>
                                 </div>
                                 <p>{element1.content}</p>
                             </div>
@@ -65,9 +120,6 @@
             </div>
         </div> <!--! end of #main -->
         <footer id="master-footer">
-		  <div class="wrapper">
-		      <p><sub>peepdeck - 2014</sub></p>
-		  </div>
         </footer>
     </div> <!--! end of #container -->
   </body>
