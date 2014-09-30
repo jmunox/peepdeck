@@ -1,0 +1,56 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+#container {
+    background-color: #269abc;
+    height: 100vh;
+}
+#master-header {
+    height: 10vh;
+    margin: 0;
+    padding: 2vh 0;
+}
+.header-title label {
+    font-weight: normal;
+    font-size: 120%;
+}
+.header-title input {
+    border-width: 1px; 
+    width: 90vw;
+    padding: 5px;
+}
+.content {
+    white-space: nowrap;
+}
+.cluster {
+    margin: 0;
+    display: inline-block;
+    width: 240px;
+    margin-right: 10px;
+    background: #f1f9ff;
+    height: 89vh;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.cluster-title {
+    height: 73px;
+    font-size: 120%;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 15px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.home .cluster-title{
+    background-color: #00d6de;
+}
+.project .cluster-title {
+    background-color: #d50d7e;
+}
+.activity .cluster-title {
+    background-color: #3970b5;
+}
+.timeline .cluster-title {
+    background-color: #d2b400;
+}
